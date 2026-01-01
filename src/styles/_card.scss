@@ -20,7 +20,7 @@
     margin: 32px auto 40px;
   }
 
-  &__device-name {
+  &__title {
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 12px;
@@ -109,6 +109,7 @@
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+    transition: transform 0.3s;
 
     &:hover {
       border: 1px solid $btn-border-color;
@@ -118,6 +119,8 @@
   }
   &:hover {
     transform: scale(1.2);
-    color: $card__title-hover;
+    .card__title {
+      color: $card__title-hover;
+    }
   }
 }
